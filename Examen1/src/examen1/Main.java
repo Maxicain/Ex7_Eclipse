@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Proprietaire P1 = new Proprietaire("Dupuis", "Marc", "123 Avenue de l'ile");
-		Proprietaire P2 = new Proprietaire("Lalonde", "Jean", "647 Blvd Seigneur");
+		Proprietaire P2 = new Proprietaire("Lalonde", "Paul", "645 Blvd Seigneur");
 		
 		Propriete Pr1 = new Propriete("P004", "Maison", 8500F, 500D, "475 Blvd Tashero.");
 		
@@ -34,7 +34,7 @@ public class Main {
 		P2.Afficher();
 		
 		System.out.print("\n----------------------------\n");
-		System.out.print("\nLe propriétaire avec le le plus grand total des prix: ");
+		System.out.print("\nLe propriï¿½taire avec le le plus grand total des prix: ");
 		if (Propriete.prixTotal(P1.getPropriete(), P1.getTailleEffective()) > Propriete.prixTotal(P2.getPropriete(), P2.getTailleEffective())) {
 			System.out.print(P1.getNomComplet());
 		}
